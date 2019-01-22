@@ -10,7 +10,7 @@ import java.rmi.RemoteException;
 import java.util.HashMap;
 import java.util.List;
 
-public interface XmlDataManager extends Remote {
+public interface DataManager extends Remote {
     List<Reader> negligentReaders () throws RemoteException;
     void removeBook (Reader reader, Book book)  throws RemoteException;
     void addBook (Reader reader, Book book) throws RemoteException;

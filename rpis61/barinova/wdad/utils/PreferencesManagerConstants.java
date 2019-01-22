@@ -8,4 +8,7 @@ public interface PreferencesManagerConstants{
     public static String policypath = "appconfig.rmi.client.policypath";
     public static String usecodebaseonly = "appconfig.rmi.client.usecodebaseonly";
     public static String classprovider = "appconfig.rmi.classprovider";
+
+    //public static String xmlpath = "C:\\Users\\Rina\\IdeaProjects\\starting-monkey-to-human-path\\src\\rpis61\\barinova\\wdad\\resources\\configuration\\rmi.xml";
+    public static String xmlpath = "C:\\Users\\Rina\\IdeaProjects\\s-m-t-h-p Server\\src\\rpis61\\barinova\\wdad\\resources\\configuration\\appconfig_test.xml";
 }

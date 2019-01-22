@@ -1,16 +1,1 @@
-<appconfig>
-    <rmi>
-        <server>
-            <registry>
-                <createregistry>yes</createregistry>
-                <registryaddress>localhost</registryaddress>
-                <registryport>1099</registryport>
-            </registry>
-        </server>
-        <client>
-            <policypath>client.policy</policypath>
-            <usecodebaseonly>no</usecodebaseonly>
-        </client>
-        <classprovider>http://www.yourhost.free.ru/cp/cp.jar</classprovider>
-    </rmi>
-</appconfig>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><library><readers firstname="ye" secondname="vaar"><book><author><firstname>Эрик</firstname><secondname>Шпикерман</secondname></author><name>О шрифте</name><printyear>2010</printyear><genre>NOVEL</genre></book><takedate day="11" month="1" year="2019"/><book><author><firstname>Эрик</firstname><secondname>Шпикерман</secondname></author><name>О шрифте</name><printyear>2010</printyear><genre>NOVEL</genre></book><takedate day="11" month="1" year="2019"/></readers></library>
