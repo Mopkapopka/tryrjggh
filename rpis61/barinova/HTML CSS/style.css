@@ -24,8 +24,7 @@ html, body {
     border-left: 1px solid #580EAD;
     border-right: 1px solid #580EAD;
     background-color: white;
-    
-
+    min-height: auto;
 }
 
 .header{
@@ -133,7 +132,9 @@ html, body {
 
 .items{
     padding: 1em;
+    overflow:hidden;
 }
+
 .items h2{
     padding: 0.5em;
 }
@@ -156,6 +157,7 @@ hr{
     height: 17em;
     text-align: center;
     padding: 1em;
+
 }
 .book_card ul{
     padding-bottom: 1em;

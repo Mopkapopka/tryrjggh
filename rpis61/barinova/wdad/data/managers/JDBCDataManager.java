@@ -32,7 +32,7 @@ public class JDBCDataManager implements DataManager {
         ArrayList<Reader> readers = new ArrayList<>();
         String query = "SELECT readers.id, first_name, second_name\n" +
                 "FROM books_readers INNER JOIN readers ON books_readers.readers_id = readers.id\n" +
-                "WHERE return_date >= 14;";
+                "WHERE return_date < CURDATE();";
         Statement stmt;
         ResultSet resultSet;
 
