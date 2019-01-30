@@ -5,7 +5,7 @@ import rpis61.barinova.wdad.utils.PreferencesManagerConstants;
 
 import java.io.File;
 
-public class TEST {
+public class test {
     public static void main(String[] args) throws Exception {
         String createregistry = "yes";
         String registryaddress = "localhost";
@@ -18,7 +18,8 @@ public class TEST {
         File fileOpen = new File("C:\\Users\\Rina\\IdeaProjects\\starting-monkey-to-human-path\\src\\rpis61\\barinova\\wdad\\resources\\configuration\\appconfig_test.xml");
         PreferencesManager pm ;
         pm = PreferencesManager.getInstance();
-        pm.readXml(fileOpen);
+        pm.read("C:\\Users\\Rina\\IdeaProjects\\starting-monkey-to-human-path\\src\\rpis61\\barinova\\wdad\\resources\\configuration\\appconfig_test.xml");
         pm.setProperty(PreferencesManagerConstants.createregistry, "no" );
+        System.out.println(pm.getProperty(PreferencesManagerConstants.createregistry));
     }
 }

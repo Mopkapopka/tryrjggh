@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style-type:none;
+}
+
+html, body {
+    height: 100%;
+        background-image: url("img/0.png");
+}
+
+*{
+    font: normal  100% arial;
+}
+
+
+.all_content{
+    width: 80%;
+    height: 120%;
+    margin: auto;
+    border-left: 1px solid #580EAD;
+    border-right: 1px solid #580EAD;
+    background-color: white;
+    min-height: auto;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr; 
+    grid-template-rows: 1fr;
+    
+    background-color: #FFF17D;
+    border-bottom: 5px SOLID white;
+    text-align: center ;
+}
+
+#library_name li h1{
+    font-size: 200%;
+}
+
+#logo img{
+    width: auto;
+    height: auto;
+    max-height: 150px;
+    max-width: 150px;
+}
+
+#login img{
+    width: auto;
+    height: auto;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    padding:0.5em;
+}
+
+.menu, .search{
+        background-color:#FFF17D;
+}
+
+.menu li:first-child{
+    border-radius: 2em 0 0 2em;
+}
+.menu li:last-child{
+    border-radius: 0 2em 2em 0;
+}
+.menu li{
+    border: 1px solid #580EAD;
+    padding: 0.5em;
+        background-color: white;
+}
+
+.menu li:hover{
+        background-color: #FFF17D;
+}
+
+.menu #readers{
+   display: grid;
+    grid-template-columns: 3fr 0.5fr;
+    padding:0.5em;
+}
+
+.menu #readers h3{
+    position: relative;
+    border-radius: 1em;
+    color: white;
+    text-align: left;
+    background: rgb(64, 199, 129);
+    padding: .1em calc(.1em + 1em) calc(.1em + 1px) calc(.1em + 1em);
+}
+
+.search{
+    border-bottom: 1px solid #8742D6 ;
+}
+#search_line ul li{
+       display: inline;
+}
+
+.search #search_line input{
+    margin: 0 0 0 1em;
+    padding: 0.2em;
+    border: 1px solid #dadada;
+    border-radius: 1em;
+    height: 2em;
+    width: 95%;
+
+}
+
+#search_text{
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+#filters ul{
+    padding-top: 0.5em;
+}
+
+#filters ul li {
+    display: inline-block;
+    text-align: center;
+    padding: 0 1em 1em 0;
+
+}
+
+.items{
+    padding: 1em;
+    overflow:hidden;
+}
+
+.items h2{
+    padding: 0.5em;
+}
+
+hr{
+    margin: 1em;
+}
+
+.books_list{
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.book_card{
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 13em;
+    height: 17em;
+    text-align: center;
+    padding: 1em;
+
+}
+.book_card ul{
+    padding-bottom: 1em;
+    padding-left: 1em;
+    text-align: left;
+}
+
+.book_card button{
+    display: inline-block;
+    border: none;
+    color: white;
+    padding: 5% 1%;
+    text-align: center;
+    text-decoration: none;
+
+    background-color:rgb(64, 199, 129);
+    width: 100px;
+}
+.book_card a {
+    color: white;
+    text-decoration: none;
+    
+    
+    background-color:rgb(64, 199, 129);
+    background-size: 50% 120%;
+}
+
+.book_card button:active {
+    background: rgb(53, 167, 110);
+}
+
+.book_card img{
+    width: auto;
+    height: auto;
+    max-height: 150px;
+    max-width: 150px;
+}
+
+#eshe{
+    padding-top: 95%;
+}
+hr{
+    border: none; /* Убираем границу для браузера Firefox */
+    color: #9C6AD6; /* Цвет линии для остальных браузеров */
+    background-color: #9C6AD6; /* Цвет линии для браузера Firefox и Opera */
+    height: 1px; /* Толщина линии */
+}

@@ -21,6 +21,10 @@ public class XmlTask {
         this.library = library;
     }
 
+    XmlTask(){
+        library = new Library();
+    }
+
     void saveXML(File file) throws JAXBException {
         JAXBContext context = JAXBContext.newInstance(Library.class);
         Marshaller marshaller = context.createMarshaller();
@@ -55,24 +59,27 @@ public class XmlTask {
     }
 
     public boolean removeBook(Reader reader, Book book) throws JAXBException {
-        if (library.getReader( reader.getFirstName(),
-                reader.getSecondName()) == null)
-        return false;
+        if (library.getReader( reader.getFirstname(),
+                reader.getSecondname()) == null)
+            return false;
         library.getReader(
-                reader.getFirstName(),
-                reader.getSecondName()
+                reader.getFirstname(),
+                reader.getSecondname()
         ).returnBook(book);
         saveXML(file);
         return true;
     }
 
     public void addBook (Reader reader, Book book) throws JAXBException {
-        if(library.getReader( reader.getFirstName(),reader.getSecondName()) == null){
+        if (library == null) library = new Library();
+        if (library.getReader().isEmpty()) System.out.println("Welcome, first reader!");
+
+        if(library.getReader( reader.getFirstname(),reader.getSecondname()) == null){
             library.openLibraryCard(reader);
         }
         library.getReader(
-                reader.getFirstName(),
-                reader.getSecondName()
+                reader.getFirstname(),
+                reader.getSecondname()
         ).takeBook(book);
         saveXML(file);
     }
